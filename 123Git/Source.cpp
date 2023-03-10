@@ -2,7 +2,7 @@
 
 int main()
 {
-	int count = 10;
+	int count = 95;
 
 	std::cout << "Hello World!\n";
 }
