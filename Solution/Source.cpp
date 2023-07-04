@@ -1,86 +1,37 @@
 #pragma once
 #include <iostream>
-#include <Windows.h>
-#include <conio.h>
-#include <time.h>
 
-// STL <array 라이브러리>
-#include<array>
-
-//STL <vector 라이브러리>
-#include <vector>
+// STL <string 라이브러리>
+#include <string>
 
 using namespace std;
 
 int main()
 {
-#pragma region STL 표준 템플릿 라이브러리
-	// C++에서 사용할 수 있는 컨테이너 class와 알고리즘을
-	// 일반화 시켜서 사용할 수 있는 자료구조를 포함하는 라이브러리입니다.
+#pragma region 문자열 클래스 (std::string)
+	std::string string("문자열");
+	std::string name;
 
-	//std::array
-	/*
-	std::array<int, 5> STLarray;
-	STLarray[0] = 10;
+	// std::cout << "string 변수의 값 : " << string << std::endl;
+	// 
+	// string = "클래스 ";
+	// 
+	// std::cout << "string 변수의 값 : " << string << std::endl;
 
-	std::cout << "STLarray의 크기" << STLarray.size() << std::endl;
-	*/
+	std::cout << "string 변수의 값을 입력해주세요 : ";
+	std::cin >> string;
 
-	// std::vector
-	/*
-	std::vector<int> vector;
-	vector.push_back(10);
-	vector.push_back(20);
-	vector.push_back(30);
-	vector.push_back(40);
-	vector.push_back(50);
-	vector.push_back(60);
-	vector.push_back(70);
+	std::cout << "name 변수의 값을 입력해주세요 : ";
+	std::cin >> name;
+	std::cout << std::endl;
 
-	vector.pop_back();
-	vector.pop_back();
-	vector.pop_back();
-	vector.pop_back();
-	vector.pop_back();
+	std::cout << "string 변수의 값 : " << string <<  "	name 변수의 값 : " << name << std::endl;
 
-	std::cout << "capacity = " << vector.capacity() << std::endl;
-
-	for (int i = 0; i < vector.size(); i++)
-	{
-		std::cout << vector[i] << std::endl;
-	}
-	*/
-
-	// 리듬게임
-	std::vector<const char* > vector;
-	
-
-
-	while(1)
-	{
-
-		if (_kbhit())
-		{
-			= _getch();
-
-			{
-
-			}
-
-
-
-
-		}
-	}
-
-	
-
-
-
-
-
+	// 1. 띄어쓰기를 했을 때 출력이 이상하게 되는 부분 이해하기
+	// 2. 이 문제점에 대해서 해결 방안 찾아보기
 
 #pragma endregion
+
 
 	return 0;
 }

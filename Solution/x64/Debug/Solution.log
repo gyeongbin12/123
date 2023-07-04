@@ -1,19 +1,2 @@
-﻿  Animal.cpp
-  Carnivore.cpp
-  Computer.cpp
-  Divice.cpp
-  Ghost.cpp
-  IPhone.cpp
-  Item.cpp
-  Keyboard.cpp
-  Lion.cpp
-  Marine.cpp
-  Mouse.cpp
-  Source.cpp
-  Sword.cpp
-  Tiger.cpp
-  Unit.cpp
-  Vector3.cpp
-  Weapon.cpp
-  Generating Code...
+﻿  Source.cpp
   Solution.vcxproj -> C:\Users\Administrator\Desktop\경빈\sos\123\Solution\x64\Debug\Solution.exe
