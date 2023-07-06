@@ -1,34 +1,105 @@
 #pragma once
 #include <iostream>
 
-// STL <string 라이브러리>
-#include <string>
+// STL <list 라이브러리>
+#include <list>
+
+// STL <map 라이브러리>
+#include <map>
+
+// STL <set 라이브러리>
+#include <set>
 
 using namespace std;
 
 int main()
 {
-#pragma region 문자열 클래스 (std::string)
-	std::string string("문자열");
-	std::string name;
+#pragma region 연관 컨테이너
+	// Key와 value처럼 관련있는 데이터를 하나의 쌍으로
+	//저장하는 컨테이너입니다.
 
-	// std::cout << "string 변수의 값 : " << string << std::endl;
-	// 
-	// string = "클래스 ";
-	// 
-	// std::cout << "string 변수의 값 : " << string << std::endl;
+	// std::list
+	/*
+	// std::list<< std::list<int> list;
 
-	std::cout << "string 변수의 값을 입력해주세요 : ";
-	std::cin >> string;
+	//list.push_front(100);
+	//list.push_back(45);
+	//list.push_back(33);
+	//list.push_back(11);
+	//list.push_back(7);
+	
+	//iterator
+	//std::list<int>::iterator iter;
+	
+	// for (iter = list.begin(); iter != list.end(); iter++)
+	//{
+		//std::cout << "List의 값 : " << *iter << std::endl;
+	//}
 
-	std::cout << "name 변수의 값을 입력해주세요 : ";
-	std::cin >> name;
-	std::cout << std::endl;
+	//list.pop_front(); // 45, 33, 11, 7
+	//list.pop_back(); // 45, 33, 11
 
-	std::cout << "string 변수의 값 : " << string <<  "	name 변수의 값 : " << name << std::endl;
+	//iter = list.begin();
+	 
+	//iter++;
+	
+	//list.insert(iter, 99);
+	//list.erase(iter);
+	 
+	//std::cout << std::endl;
 
-	// 1. 띄어쓰기를 했을 때 출력이 이상하게 되는 부분 이해하기
-	// 2. 이 문제점에 대해서 해결 방안 찾아보기
+	//for (iter = list.begin(); iter != list.end(); iter++)
+	//{
+	//std::cout << "List의 값 : " << *iter << std::endl;
+	//}
+	*/
+
+	// std::map
+	/*
+	std::map<const char*, int> map;
+
+
+	map.insert(pair<const char*, int>("Sword", 1000));
+	map.insert(pair<const char*, int>("Shoes", 500));
+
+
+	std::map<const char*, int>::iterator mapIterator;
+
+	for (mapIterator = map.begin(); mapIterator != map.end(); mapIterator++)
+	{
+		// mapIterator->first
+		// mapIterator->second
+		std::cout << "KEY : " << mapIterator->first << " VALUE : " << mapIterator->second << std::endl;
+	}
+
+	// map.find() : KEY를 검색하는 함수입니다.
+	if (map.find("Sw") != map.end())
+	{
+		std::cout << "KEY가 존재합니다." << std::endl;
+	}
+	else
+	{
+		std::cout << "KEY가 존재하지 않습니다." << std::endl;
+	}
+	*/
+
+	// std::set
+	std::set<int> set;
+
+	set.insert(45);
+	set.insert(96);
+	set.insert(7);
+	set.insert(12);
+
+	// clear() : 모든 원소를 삭제하는 함수입니다.
+	set.clear();
+
+	// set은 자동으로 정렬이 일어납니다.
+	for (auto& element : set)
+	{
+		std::cout << element << std::endl;
+	}
+
 
 #pragma endregion
 
